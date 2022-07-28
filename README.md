@@ -137,8 +137,9 @@ it becomes like this
 
 
 
-### Red and Black tree : 
-another way to keep trees balanced. Search have a complexity of O(log(n)).
+### Red and Black tree :
+
+another way to keep trees balanced. Instead of running the rebalance algorithm every time we add an element to the tree, the red back tree has another system.
 
 ### N-ary tree :
 It is a tree where each node can have 0 to N children. 
