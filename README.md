@@ -61,7 +61,7 @@ For the second node we have :
 
 BF = 2 - 0 = 2 => Unballanced 
 
-#### Method to balance trees : 
+#### Method to three nodes : 
 
 ##### 1- LL imballance :
 
@@ -113,6 +113,27 @@ to haver a RR imbalance
 And finaly 
 
 ![image](https://user-images.githubusercontent.com/42012627/181599084-00f469f1-20ed-4dee-80f8-07e532036989.png)
+
+
+### Methods to balance multiple trees : 
+
+#### LL and RR rotations : 
+
+If we have a BST like this that needs a LL rotation 
+
+![image](https://user-images.githubusercontent.com/42012627/181602810-c4c5b671-e5e6-4478-bd1e-9814f9ffbdad.png)
+
+It becomes like this : 
+
+![image](https://user-images.githubusercontent.com/42012627/181603185-e9efe781-59a5-4cc4-8b21-6b1e1c397a45.png)
+
+#### LR and RL rotations : 
+
+![image](https://user-images.githubusercontent.com/42012627/181604186-1d2a9808-e9f7-429f-9b93-03c3455680d9.png)
+
+it becomes like this 
+
+![image](https://user-images.githubusercontent.com/42012627/181604455-b737f8c0-a2e7-4d94-9a31-625d6c87071d.png)
 
 
 
