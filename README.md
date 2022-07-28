@@ -57,10 +57,37 @@ For the second node we have :
 ![image](https://user-images.githubusercontent.com/42012627/181594982-378a4090-bb16-4083-8efd-732fc769fc51.png)
 BF = 2 - 0 = 2 => Unballanced 
 
+#### Method to balance trees : 
+
+##### 1- LL imballance : 
+![image](https://user-images.githubusercontent.com/42012627/181598690-b0378ac8-2c19-4287-97f6-128cb7c51740.png)
+The first node is imbalanced from the left (we can know which side is heavier with the sign, '-' for right and '+' for the left).
+We will do a LL rotation like this : 
+![image](https://user-images.githubusercontent.com/42012627/181599004-dbb94a5e-dd11-4b2a-a665-51001dd7f847.png)
+
+![image](https://user-images.githubusercontent.com/42012627/181599084-00f469f1-20ed-4dee-80f8-07e532036989.png)
+now it is balanced 
+
+##### 2- LR imballance : 
+![image](https://user-images.githubusercontent.com/42012627/181599290-66e818f1-23b6-46d0-8e8e-da8dced86e63.png)
+We have a Left-Right imballance. we will perform this rotation : 
+![image](https://user-images.githubusercontent.com/42012627/181599515-bc836b4d-4948-412e-b7c4-dab723bedc69.png)
+Which will result in a LL imbalance 
+![image](https://user-images.githubusercontent.com/42012627/181599631-ffaa1f69-cdb1-4c5a-bf9a-0e59272198e3.png)
+
+##### 3- RR imballance : 
+![image](https://user-images.githubusercontent.com/42012627/181599824-f349f962-e350-4d9a-a812-67b00c6a7726.png)
+to have 
+![image](https://user-images.githubusercontent.com/42012627/181599084-00f469f1-20ed-4dee-80f8-07e532036989.png)
+
+##### 3- RL imballance : 
+![image](https://user-images.githubusercontent.com/42012627/181600077-10cb2799-a4ba-4460-a8af-81e3e1e6acf3.png)
+to haver a RR imbalance 
+![image](https://user-images.githubusercontent.com/42012627/181599824-f349f962-e350-4d9a-a812-67b00c6a7726.png)
+And finaly 
+![image](https://user-images.githubusercontent.com/42012627/181599084-00f469f1-20ed-4dee-80f8-07e532036989.png)
 
 
-(pas bien compris pour l'instant je dois regarder ça : https://www.youtube.com/watch?v=jDM6_TnYIqE)
-Lookup, insertion and detection operations only have a o(log n) complexity 
 
 ### Red and Black tree : 
 another way to keep trees balanced. Search have a complexity of O(log(n)).
