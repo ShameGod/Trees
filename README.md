@@ -50,22 +50,26 @@ To rotate a BST, we first calculate a *balance factor*, it is calculated like th
 if BF's value is within {-1,0,1} this means that the tree is perfecty balanced.
 
 For example here for the first node we have : 
+
 ![image](https://user-images.githubusercontent.com/42012627/181594721-1c0c9ceb-b94f-4f19-808b-1463eb453ce6.png)
 
 BF = 3 - 3 = 0 => balanced
 
 For the second node we have : 
+
 ![image](https://user-images.githubusercontent.com/42012627/181594982-378a4090-bb16-4083-8efd-732fc769fc51.png)
 
 BF = 2 - 0 = 2 => Unballanced 
 
 #### Method to balance trees : 
 
-##### 1- LL imballance : 
+##### 1- LL imballance :
+
 ![image](https://user-images.githubusercontent.com/42012627/181598690-b0378ac8-2c19-4287-97f6-128cb7c51740.png)
 
 The first node is imbalanced from the left (we can know which side is heavier with the sign, '-' for right and '+' for the left).
 We will do a LL rotation like this : 
+
 ![image](https://user-images.githubusercontent.com/42012627/181599004-dbb94a5e-dd11-4b2a-a665-51001dd7f847.png)
 
 
