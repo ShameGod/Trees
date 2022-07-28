@@ -28,8 +28,38 @@ This tree has a condition/ constraint. Each node can only have two children. It 
 In BST the value of the left node most be smaller or equal to the parent node. This property makes BST suitable for sorting and searching. 
 ![image](https://user-images.githubusercontent.com/42012627/181180821-d013152b-e890-41fd-b930-554cbcb5ff18.png)
 
+One of the properties of a binary tree is the height : 
+![image](https://user-images.githubusercontent.com/42012627/181590353-5953096b-64f5-476c-85eb-5c17fea846ae.png)
+
+
+For example while searching for an element we go through one branch of each node (according to its value).
+When searching for an element in a BST, the maximum time complexity is equal to number of node (n) of the binary tree and the minimum is log(n). 
+
+**Important : we don't insert duplicate in a binary tree**
+
+A drawback of the BST is : 
+![image](https://user-images.githubusercontent.com/42012627/181591581-80dcd4db-798b-40cb-83a7-f7949037bb48.png)
+The form of BST depends on the way we insert data. **For n number of elements in the BST there are n! possible forms it can have**
+With BST we can either have a maximum height tree or a minimum one (depends of how we insert data). We would like to have a minmum hight tree every time. To get this emprouvment we use AVL trees that result from rotating nodes in a classical BST. 
+
+
 ### AVL Tree : 
-AVL is a self balanced tree (pas bien compris pour l'instant je dois regarder ça : https://www.youtube.com/watch?v=jDM6_TnYIqE)
+AVL is a self balanced tree, resulting from rotating BST nodes.
+To rotate a BST, we first calculate a *balance factor*, it is calculated like this : 
+** Balance Factor = height of left subtree - hight of right subtree **
+if BF's value is within {-1,0,1} this means that the tree is perfecty balanced.
+
+For example here for the first node we have : 
+![image](https://user-images.githubusercontent.com/42012627/181594721-1c0c9ceb-b94f-4f19-808b-1463eb453ce6.png)
+BF = 3 - 3 = 0 => balanced
+
+For the second node we have : 
+![image](https://user-images.githubusercontent.com/42012627/181594982-378a4090-bb16-4083-8efd-732fc769fc51.png)
+BF = 2 - 0 = 2 => Unballanced 
+
+
+
+(pas bien compris pour l'instant je dois regarder ça : https://www.youtube.com/watch?v=jDM6_TnYIqE)
 Lookup, insertion and detection operations only have a o(log n) complexity 
 
 ### Red and Black tree : 
