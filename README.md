@@ -89,6 +89,11 @@ Which will result in a LL imbalance
 
 ![image](https://user-images.githubusercontent.com/42012627/181599631-ffaa1f69-cdb1-4c5a-bf9a-0e59272198e3.png)
 
+to get 
+
+![image](https://user-images.githubusercontent.com/42012627/181599084-00f469f1-20ed-4dee-80f8-07e532036989.png)
+
+
 ##### 3- RR imballance : 
 
 ![image](https://user-images.githubusercontent.com/42012627/181599824-f349f962-e350-4d9a-a812-67b00c6a7726.png)
