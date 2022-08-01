@@ -43,7 +43,7 @@ The form of BST depends on the way we insert data. **For n number of elements in
 With BST we can either have a maximum height tree or a minimum one (depends of how we insert data). We would like to have a minmum hight tree every time. To get this emprouvment we use AVL trees that result from rotating nodes in a classical BST. 
 
 
-### AVL Tree : 
+### AVL Tree (Alderson-Veski and Landis) : 
 AVL is a self balanced tree, resulting from rotating BST nodes.
 To rotate a BST, we first calculate a *balance factor*, it is calculated like this : 
 ** Balance Factor = height of left subtree - hight of right subtree **
