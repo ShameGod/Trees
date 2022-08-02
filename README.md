@@ -176,5 +176,24 @@ This results to :
 It is a tree where each node can have 0 to N children. 
 
 
+## Exercices : 
+### 1- equal trees : https://leetcode.com/problems/same-tree/
+In the beguining I had this solution : 
+
+![image](https://user-images.githubusercontent.com/42012627/182441175-00bddfc5-50c2-4a29-b63c-d59791d47bab.png)
+
+But I didn't know how to get out of the loop. That's when I found this great solution :
+```
+class Solution {
+    public boolean isSameTree(TreeNode p, TreeNode q) {
+        if(p == null && q ==null){return true;}
+        if(p == null || q ==null){return false;}
+        if(p.val != q.val){return false;}
+        
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
+        }
+    }
+```
+
 
 
