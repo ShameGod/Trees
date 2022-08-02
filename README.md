@@ -1,7 +1,7 @@
 # Trees
 
 ## Definition : 
-The trees is a data structure that is used to representy hirerachical data. Something that is **not** possible in linear structures. 
+The trees is a data structure that is used to representy hirerachical data. Something that is **not possible in linear structures.** 
 
 ![image](https://user-images.githubusercontent.com/42012627/181175846-b7210566-a44f-469a-9d2c-32d9737475b8.png)
 
