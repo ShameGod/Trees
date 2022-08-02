@@ -26,10 +26,29 @@ This tree has a condition/ constraint. Each node can only have two children. It 
 
 ### Binary search tree : 
 In BST the value of the left node most be smaller or equal to the parent node. This property makes BST suitable for sorting and searching. 
+
 ![image](https://user-images.githubusercontent.com/42012627/181180821-d013152b-e890-41fd-b930-554cbcb5ff18.png)
 
 One of the properties of a binary tree is the height : 
+
 ![image](https://user-images.githubusercontent.com/42012627/181590353-5953096b-64f5-476c-85eb-5c17fea846ae.png)
+
+#### Tree traversal : 
+
+There are three ways to traverse a tree : 
+* in order traversal : left, root and right 
+* pre order traversal : root, left and tight 
+* post order traversal : right, root, left 
+
+
+Here is a declaration of a binary search tree : 
+
+![image](https://user-images.githubusercontent.com/42012627/182430363-cd37eade-5b56-4215-8def-7a5b8b3d90f8.png)
+
+Here is a in order traversal : 
+
+![image](https://user-images.githubusercontent.com/42012627/182431900-504a3422-b8ec-4da5-81f3-7f49a040ae3c.png)
+
 
 
 For example while searching for an element we go through one branch of each node (according to its value).
@@ -41,6 +60,8 @@ A drawback of the BST is :
 ![image](https://user-images.githubusercontent.com/42012627/181591581-80dcd4db-798b-40cb-83a7-f7949037bb48.png)
 The form of BST depends on the way we insert data. **For n number of elements in the BST there are n! possible forms it can have**
 With BST we can either have a maximum height tree or a minimum one (depends of how we insert data). We would like to have a minmum hight tree every time. To get this emprouvment we use AVL trees that result from rotating nodes in a classical BST. 
+
+
 
 
 ### AVL Tree (Alderson-Veski and Landis) : 
@@ -139,7 +160,17 @@ it becomes like this
 
 ### Red and Black tree :
 
-another way to keep trees balanced. Instead of running the rebalance algorithm every time we add an element to the tree, the red back tree has another system.
+another way to keep trees balanced. Here are its main conditions :
+* Nodes be either black or red 
+* If a node is red then its children are black
+* The root node and the NIL(element after the leaves) are always black 
+* All the pathes from a node to its descendent contain the same number of black nodes
+
+This results to : 
+* We 1 need one more unit of storage to keep the color of the node 
+* The longuest path is < or = to 2 times the shortest path 
+
+**The max time complexity for search, insert and delete is o(log(n)). But the space complexity is o(n) as we need to keep the color of every node**
 
 ### N-ary tree :
 It is a tree where each node can have 0 to N children. 
