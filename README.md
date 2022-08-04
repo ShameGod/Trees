@@ -175,16 +175,33 @@ This results to :
 ### N-ary tree :
 It is a tree where each node can have 0 to N children. 
 
-## Tries : https://www.youtube.com/watch?v=kMt9Y5fv4Ug&ab_channel=GoogleStudents
+## Tries : https://www.youtube.com/watch?v=kMt9Y5fv4Ug&ab_channel=GoogleStudents + https://drstearns.github.io/tutorials/trie/
 A type of tree that keeps the position of the elements within the "trie". It is usually used with stings. For example to store the words "ear, earl, earls, eat, eaten"
 the trie will look like this : 
 
 ![image](https://user-images.githubusercontent.com/42012627/182912256-886d2b7c-bc6b-4484-ad8c-05d9d1854231.png)
 
 For example on many social media systems, you can refer to other users in your posts. As soon as you start typing a name, you often get a list of possible matches. The system might have millions of users, but it's able to show you suggestions as quickly as you can type.
+ 
+**This data structure is very efficient for search and retrieve operations.**
+
+A trie stores elements with **a key and a value**, it is like a BST with Maps in it. The key and value couple are called an entry. **the key is always a String** but the value can be wathever type we want. We can even have a map with a key and a non existing value (equivalent to a BST of sets).  
+
+The algorithme that adds a new entry to the Trie : 
+* let current node = root node
+* for each letter in the key
+    find the child node of current node associated with that letter
+    if there is no child node associated with that letter, create a new node and add it to current node as a child associated with the letter
+    set current node = child node
+* add value to current node
+
+
+## Important notes:  
+* except tries, all the other tree types can only store primary int variables. As it cannot do a comparing operation between non primary types.
+* 
 
 ## Exercices : 
-### 1- equal trees : https://leetcode.com/problems/same-tree/
+### 1- equal trees : https://leetcode.com/problems/same-tree/ 
 In the beguining I had this solution : 
 
 ![image](https://user-images.githubusercontent.com/42012627/182441175-00bddfc5-50c2-4a29-b63c-d59791d47bab.png)
