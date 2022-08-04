@@ -175,6 +175,13 @@ This results to :
 ### N-ary tree :
 It is a tree where each node can have 0 to N children. 
 
+## Tries : https://www.youtube.com/watch?v=kMt9Y5fv4Ug&ab_channel=GoogleStudents
+A type of tree that keeps the position of the elements within the "trie". It is usually used with stings. For example to store the words "ear, earl, earls, eat, eaten"
+the trie will look like this : 
+
+![image](https://user-images.githubusercontent.com/42012627/182912256-886d2b7c-bc6b-4484-ad8c-05d9d1854231.png)
+
+
 
 ## Exercices : 
 ### 1- equal trees : https://leetcode.com/problems/same-tree/
