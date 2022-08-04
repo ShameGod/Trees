@@ -195,5 +195,6 @@ class Solution {
     }
 ```
 
-
+### 2- is a BST : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/
+Same as the one I did before(you can find my solition in the repo). The solution is to use recursion with the '&&' operator.  
 
