@@ -181,7 +181,7 @@ the trie will look like this :
 
 ![image](https://user-images.githubusercontent.com/42012627/182912256-886d2b7c-bc6b-4484-ad8c-05d9d1854231.png)
 
-
+For example on many social media systems, you can refer to other users in your posts. As soon as you start typing a name, you often get a list of possible matches. The system might have millions of users, but it's able to show you suggestions as quickly as you can type.
 
 ## Exercices : 
 ### 1- equal trees : https://leetcode.com/problems/same-tree/
