@@ -175,7 +175,9 @@ This results to :
 ### N-ary tree :
 It is a tree where each node can have 0 to N children. 
 
-## Tries : https://www.youtube.com/watch?v=kMt9Y5fv4Ug&ab_channel=GoogleStudents + https://drstearns.github.io/tutorials/trie/
+## Tries/ digital trees :
+
+https://www.youtube.com/watch?v=kMt9Y5fv4Ug&ab_channel=GoogleStudents + https://drstearns.github.io/tutorials/trie/
 A type of tree that keeps the position of the elements within the "trie". It is usually used with stings. For example to store the words "ear, earl, earls, eat, eaten"
 the trie will look like this : 
 
@@ -183,22 +185,39 @@ the trie will look like this :
 
 For example on many social media systems, you can refer to other users in your posts. As soon as you start typing a name, you often get a list of possible matches. The system might have millions of users, but it's able to show you suggestions as quickly as you can type.
  
-**This data structure is very efficient for search and retrieve operations.**
+**This data structure is very efficient for search and retrieve operations. But takes o(n) complexity to do an insertion. It should be used to set up dictionaries.**
 
-A trie stores elements with **a key and a value**, it is like a BST with Maps in it. The key and value couple are called an entry. **the key is always a String** but the value can be wathever type we want. We can even have a map with a key and a non existing value (equivalent to a BST of sets).  
+A trie stores elements with **a key and a value**, it is like a BST with Maps in it. The key and value couple are called an entry. The value can have be wathever type we want. We can even have a map with a key and a non existing value (equivalent to a BST of sets).  
+
+**declaration of  trie data structure :** 
+```
+public class TrieNode {
+    private HashMap<Character, TrieNode> children;
+    private String content;
+    private boolean isWord;
+    
+   // ...
+}
+```
 
 The algorithme that adds a new entry to the Trie : 
 * let current node = root node
 * for each letter in the key
-    find the child node of current node associated with that letter
-    if there is no child node associated with that letter, create a new node and add it to current node as a child associated with the letter
-    set current node = child node
+   * find the child node of current node associated with that letter
+   * if there is no child node associated with that letter, create a new node and add it to current node as a child associated with the letter
+   * set current node = child node
 * add value to current node
+
+The algorithme of inserting a node is :  (o of n complexity)
+* Set a current node as a root node
+* Set the current letter as the first letter of the word
+* If the current node has already an existing reference to the current letter (through one of the elements in the “children” field), then set current node to that  
+  referenced node. Otherwise, create a new node, set the letter equal to the current letter, and also initialize current node to this new node
+* Repeat step 3 until the key is traversed
 
 
 ## Important notes:  
 * except tries, all the other tree types can only store primary int variables. As it cannot do a comparing operation between non primary types.
-* 
 
 ## Exercices : 
 ### 1- equal trees : https://leetcode.com/problems/same-tree/ 
@@ -221,4 +240,8 @@ class Solution {
 
 ### 2- is a BST : https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/
 Same as the one I did before(you can find my solition in the repo). The solution is to use recursion with the '&&' operator.  
+
+
+### 3- Tries : 
+Indice : https://www.baeldung.com/trie-java
 
